@@ -5,13 +5,8 @@
 x test -x bin/check && ERROR please use "$WORK/bin/check" instead
 
 x IGN tty || ERROR this must be run from a TTY as it requires user interaction
-CLEAN "$WORK" || ERROR "$WORK:" git status not clean
-#CLEAN "$MAIN" || ERROR "$MAIN:" git status not clean
-
-if	x ign git status
-then
-	:
-fi
+x GITCLEAN "$WORK" || ERROR "$WORK:" git status not clean
+# GITCLEAN "$MAIN" || ERROR "$MAIN:" git status not clean
 
 NOTYET
 
