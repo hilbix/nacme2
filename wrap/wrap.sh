@@ -23,7 +23,7 @@ WORK="${MAIN%/*}"				# /path/to/work
 # Common things
 #
 
-ERROR() { CALLER 0; DEBUG "$file:" line "$line" "$@"; OOPS command "$CMD": "$@"; }	# ERROR ...: command errors
+ERROR() { CALLER 0; DEBUG "$file:" line "$line:" "$@"; OOPS command "$CMD": "$@"; }	# ERROR ...: command errors
 IGN() { Writer /dev/null "$@"; }	# IGN cmd args..: ignore output
 
 # Check that the git status is clean (no unchanged commits, etc.)
