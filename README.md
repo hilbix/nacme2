@@ -1,3 +1,5 @@
+> THIS IS NOT READY YET
+
 # NanoACMEv2
 
 This is a minimal shell based implementation of the ACME 2 protocol for LetsEncrypt.
